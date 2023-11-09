@@ -1,0 +1,374 @@
+.hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perfil{
+    border-radius: 50%;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* About -- Sobre mi*/
+
+.About {
+    background-color: #fff;
+    padding: 7rem 9rem;
+    
+}
+
+.About h1{
+    margin-bottom: 1rem;
+}
+.About h2{
+    margin-bottom: 1rem;
+}
+.About p{
+    margin-bottom: 2rem;
+}
+
+
+.SobreMi{
+    display: flex;
+    justify-content: space-between; /* Para distribuir los elementos de forma equitativa */
+    align-items: flex-start; /* Para alinear los elementos en la parte superior */
+}
+
+.Bio {
+    flex: 0 1 40%; /* Establece el ancho del 60% para dejar espacio para Skills */
+}
+.Bio h3{
+    margin-top: 3rem;
+}
+
+
+.Cv{
+    text-decoration: none;    
+    display: inline-block;
+    border: 0.25em solid #1A1A1A;
+    border-radius: 2em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em 2.5em;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23,1, 0.32,1);
+    
+}
+
+
+.Cv:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0,0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-2px);
+}
+
+
+.Cv:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+
+/*Skills*/
+
+.Skills {
+    flex: 0 1 50%; /* Establece el ancho del 30% para Skills */
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    margin: 10px; /* Ajusta el margen entre las imágenes según tus necesidades */
+    font-size: 1rem;
+    font-weight: bold ; /* Esto hará que todos los elementos de texto en el cuerpo del documento aparezcan en negrita */
+
+}
+.skill-item img{
+    transform-origin: center; /* Define el punto de transformación en el centro de la imagen */
+    transition: transform 0.5s ease; /* Transición de 0.5 segundos para un cambio suave durante el efecto hover */
+
+}
+.skill-item:hover img{
+    transform: scale(1.1); /* Escala la imagen al 110% cuando el mouse pasa sobre ella */
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+
+.skill-item p {
+    margin-top: 5px; /* Ajusta la separación entre la imagen y el texto */
+}
+
+
+
+
+/*Servicios*/
+
+
+.Services{
+    background-color: #fff;
+    padding: 7rem 9rem;
+}
+
+
+.Services h2{
+    margin-bottom: 1rem;
+}
+.Services h4{
+    margin: 5%;
+}
+.Services p{
+    margin-bottom: 2rem;
+}
+
+.service-items {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa en la fila */
+    align-items: center; 
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    margin: 0 -2.3%  ;
+    /* Centra verticalmente los elementos en la fila */
+    /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola línea */
+}
+.service-item{
+    width: calc(29% ); /* 33.33% de ancho para mostrar 3 elementos en una fila, y 20px de margen entre los elementos */
+    padding: 1rem 0 0;
+    justify-content: center;
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+    margin: 1em; /* Ajusta el margen entre los elementos según tus necesidades */
+}
+.service-item p{
+    padding: 0 5% ;
+    margin-bottom: 0;
+
+
+}
+
+.icon{
+    width:2em;
+    height:2em;
+}
+
+.cel{
+    fill: gray;
+    transition: fill 0.5s ease; /* 0.3s es la duración de la transición y 'ease' es la función de temporización para hacerla suave */
+}
+.cel:hover{
+    fill: darkblue;
+}
+
+.creative{
+    fill: orangered;
+    transition: fill 0.5s ease;
+}
+.creative:hover{
+    fill: darkslategrey;
+}
+
+.deve{
+    fill: green;
+    stroke: green; /* Color del trazo */
+    stroke-width: 1;
+    transition: fill 0.5s ease, stroke 0.5s ease; /* Transición para el color de fondo y el color del trazo */
+}
+.deve:hover{
+    stroke: lightgreen; /* Color del trazo */
+    fill: lightgreen;
+}
+.social{
+    fill: red;
+    transition: fill 0.5s ease;
+}
+.social:hover{
+    fill: darkred;
+}
+.perfor{
+    fill: darkorange;
+    transition: fill 0.5s ease;
+}
+.perfor:hover{
+    fill: darkgoldenrod;
+}
+
+
+
+/* -- Porfolio -- */
+.Porfolio{
+    background-color: #fff;
+    padding: 7rem 9rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    
+    margin:  1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.containers{
+    width: 34%;
+    margin: 0 1% ;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 15px 25px 
+    rgba(0,0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.8s;
+
+}
+
+.first {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/porfolio-f7438.appspot.com/o/Screenshot%202023-10-09%20183244.png?alt=media&token=6e366216-e385-4449-98c7-c2a45cba6fdd");
+}
+.second{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/porfolio-f7438.appspot.com/o/Screenshot%202023-10-09%20183244.png?alt=media&token=6e366216-e385-4449-98c7-c2a45cba6fdd");
+}
+.third{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/porfolio-f7438.appspot.com/o/Screenshot%202023-10-09%20183244.png?alt=media&token=6e366216-e385-4449-98c7-c2a45cba6fdd");
+}
+.first:hover , .second:hover , .third:hover{
+    transform:scale(1.1);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    transform: translateY(70%);
+    transition: 0.7s ease-in-out;
+}
+.content h5{
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #1A1A1A;
+    padding-top: 1rem;
+}
+.content p{
+    text-align: justify;
+    width: 75%;
+    color: #fff;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.containers:hover .content{
+    transform: translateY(0%);
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)) ;
+
+}
+
+.btns{
+    display: flex; /* Alinea los elementos hijos de forma horizontal */
+    align-items: center;
+}
+.btnpor {
+    height: 2rem; /* Establece la altura deseada para los botones */
+    width: 9rem;
+    margin: 0 5% ;
+    font-size: 80%;
+    margin-top: 17%;
+    padding: 2%;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnpor svg {
+    margin-right: 0.5rem; /* Ajusta el espacio entre el icono y el texto */
+}
+
+
+@media screen and (max-width: 480px) {
+    .Porfolio{
+        padding: 2rem; /* Cambiar el padding a 2rem en pantallas pequeñas */
+        text-align: center;
+    }
+    .main-container{
+        margin: 0 0  ;
+        
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    }
+    .containers{
+        width: 95%;
+        margin: 1em 0;
+        padding: 0;
+    }
+    .Services{
+        padding: 2rem; /* Cambiar el padding a 2rem en pantallas pequeñas */
+        text-align: center;
+    }
+    .service-item {
+        width: 100%; /* Cambia el ancho para mostrar un elemento en cada fila en pantallas pequeñas (modo vertical) */
+        margin: 1rem 0;
+    }
+    .service-items{
+        margin: 0 0  ;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    }
+    .About {
+        padding: 2rem; /* Cambiar el padding a 2rem en pantallas pequeñas */
+    }
+    
+    .About h1,
+    .About h2 {
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .SobreMi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Bio,
+    .Skills {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Esto se quita*/
+
+.Fin{
+    background-color: gray;
+    width: 100%;
+    color: gray;
+    height: 70%;
+}

@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans",sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-color: #000;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/porfolio-f7438.appspot.com/o/banner2.png?alt=media&token=277d5643-47db-4755-a2c4-72d9c7d78a07');
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+}

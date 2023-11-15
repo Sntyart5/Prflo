@@ -1,0 +1,101 @@
+
+
+.Services{
+    background-color: #fff;
+    padding: 7rem 9rem;
+}
+
+
+.Services h2{
+    margin-bottom: 1rem;
+}
+.Services h4{
+    margin: 5%;
+}
+.Services p{
+    margin-bottom: 2rem;
+}
+
+.service-items {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa en la fila */
+    align-items: center; 
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    margin: 0 -2.3%  ;
+    /* Centra verticalmente los elementos en la fila */
+    /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola línea */
+}
+.service-item{
+    width: calc(29% ); /* 33.33% de ancho para mostrar 3 elementos en una fila, y 20px de margen entre los elementos */
+    padding: 1rem 0 0;
+    justify-content: center;
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+    margin: 1em; /* Ajusta el margen entre los elementos según tus necesidades */
+}
+.service-item p{
+    padding: 0 5% ;
+    margin-bottom: 0;
+
+
+}
+
+.icon{
+    width:2em;
+    height:2em;
+}
+
+.cel{
+    fill: gray;
+    transition: fill 0.5s ease; /* 0.3s es la duración de la transición y 'ease' es la función de temporización para hacerla suave */
+}
+.cel:hover{
+    fill: darkblue;
+}
+
+.creative{
+    fill: orangered;
+    transition: fill 0.5s ease;
+}
+.creative:hover{
+    fill: darkslategrey;
+}
+
+.deve{
+    fill: green;
+    stroke: green; /* Color del trazo */
+    stroke-width: 1;
+    transition: fill 0.5s ease, stroke 0.5s ease; /* Transición para el color de fondo y el color del trazo */
+}
+.deve:hover{
+    stroke: lightgreen; /* Color del trazo */
+    fill: lightgreen;
+}
+.social{
+    fill: red;
+    transition: fill 0.5s ease;
+}
+.social:hover{
+    fill: darkred;
+}
+.perfor{
+    fill: darkorange;
+    transition: fill 0.5s ease;
+}
+.perfor:hover{
+    fill: darkgoldenrod;
+}
+
+@media screen and (max-width: 480px) {
+    .Services{
+        padding: 2rem; /* Cambiar el padding a 2rem en pantallas pequeñas */
+        text-align: center;
+    }
+    .service-item {
+        width: 100%; /* Cambia el ancho para mostrar un elemento en cada fila en pantallas pequeñas (modo vertical) */
+        margin: 1rem 0;
+    }
+    .service-items{
+        margin: 0 0  ;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    }
+}

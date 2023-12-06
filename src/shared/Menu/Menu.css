@@ -1,21 +1,22 @@
 .Cabecera{
     position: fixed;
     width:100%;
-    padding:1em 6rem;
+    padding:1.2em 6rem;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     color:white;
     transition: background-color 1s ease; /* Agrega una transición para suavizar el cambio de color de fondo */
-    z-index: 1;
+    z-index: 2;
 }
 
 .isScrolling {
     background-color: #002738;
 }
 .Cabecera-h1{
-
+    margin-left: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -41,10 +42,10 @@
 }
 .Cabecera-li{
     list-style: none;
-    margin: 0 .5em;
+    margin: 0 1em;
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.23rem;
     cursor: pointer;
 }
 
@@ -75,10 +76,12 @@
     }
     .Cabecera-nav.isActive{
         height:40vh;
+        padding-bottom:2rem;
         opacity: 1;
     }
     .Cabecera-ul{
         flex-direction: column;
+        padding-top: 10%;
     }
     .Cabecera-li{
         margin: .8em 0;

@@ -95,7 +95,7 @@ export function Menu() {
             <li onClick={() => scrollToSection('home')} className={`Cabecera-li ${activeSection === 'home' ? 'active' : ''}`}>Home</li>
             <li onClick={() => scrollToSection('about')} className={`Cabecera-li ${activeSection === 'about' ? 'active' : ''}`}>About</li>
             <li onClick={() => scrollToSection('services')} className={`Cabecera-li ${activeSection === 'services' ? 'active' : ''}`}>Services</li>
-            <li onClick={() => scrollToSection('porfolio')} className={`Cabecera-li ${activeSection === 'porfolio' ? 'active' : ''}`}>Porfolio</li>
+            <li onClick={() => scrollToSection('porfolio')} className={`Cabecera-li ${activeSection === 'porfolio' ? 'active' : ''}`}>Portfolio</li>
             <li onClick={() => scrollToSection('contact')} className={`Cabecera-li ${activeSection === 'contact' ? 'active' : ''}`}>Contact</li>
           </ul>
         </nav>

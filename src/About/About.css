@@ -1,18 +1,15 @@
 
 .About {
     background-color: #fff;
-    padding: 7rem 9rem;
-    
+    padding: 5rem 12rem 0 ; 
 }
 
 .About h1{
-    margin-bottom: 1rem;
-}
-.About h2{
-    margin-bottom: 1rem;
-}
-.About p{
     margin-bottom: 2rem;
+}
+
+.About p{
+    margin: 2rem 0;
 }
 
 
@@ -33,10 +30,11 @@
 .Cv{
     text-decoration: none;    
     display: inline-block;
-    border: 0.25em solid #1A1A1A;
+    border: 0.13em solid #1A1A1A;
+    background-color: #002738;
     border-radius: 2em;
     box-sizing: border-box;
-    color: #3B3B3B;
+    color: #fff;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
@@ -60,10 +58,13 @@
     transform: translateY(0);
 }
 
+
+
 .Skills {
-    flex: 0 1 50%; /* Establece el ancho del 30% para Skills */
+    flex: 0 1 40%; /* Establece el ancho del 30% para Skills */
 }
 .logos {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -74,7 +75,6 @@
     margin: 10px; /* Ajusta el margen entre las imágenes según tus necesidades */
     font-size: 1rem;
     font-weight: bold ; /* Esto hará que todos los elementos de texto en el cuerpo del documento aparezcan en negrita */
-
 }
 .skill-item img{
     transform-origin: center; /* Define el punto de transformación en el centro de la imagen */
@@ -85,9 +85,9 @@
     transform: scale(1.1); /* Escala la imagen al 110% cuando el mouse pasa sobre ella */
 }
 
-.skill {
-    width: 100px;
-    height: 100px;
+.skill{
+    width: 5rem;
+    height: 5rem;
     padding: 1rem;
 }
 
@@ -113,5 +113,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .Skills{
+        margin-top: 1.5rem;
     }
 }

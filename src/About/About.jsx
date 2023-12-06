@@ -7,11 +7,10 @@ export function About(){
             <h1>About me</h1>
             <div className='SobreMi'>
             <div className='Bio'>
-                <h2>Who am i?</h2>
-                <h3>i am a Frontend Developer</h3>
-                <p>✅ Soy un apasionado desarrollador de software con sólidos conocimientos en tecnologías web modernas y bases de datos relacionales.
-                    <br /> <br />✅ Mi experiencia se centra en la creación de interfaces web atractivas y funcionales utilizando HTML, CSS y JavaScript, así como en el desarrollo de aplicaciones dinámicas con ReactJS.
-                    <br /> <br />✅ Además, poseo habilidades en el diseño y optimización de bases de datos utilizando MySQL.
+                <h2>Who am I?</h2>
+                <h3>I'm a Frontend Developer</h3>
+                <p>✅ I am a passionate software developer with strong expertise in modern web technologies and relational databases.
+                    <br /> <br />✅ My experience focuses on creating attractive and functional web interfaces using HTML, CSS, and JavaScript, as well as developing dynamic applications with ReactJS.
                 </p>
                 <a className='Cv' download="CurriculumSV" href="../Archivos/CvSantiagoVargas.pdf">Dowland CV</a>
             </div>
@@ -41,7 +40,7 @@ export function About(){
                     </div>
                     <div class="skill-item">
                         <img src="https://firebasestorage.googleapis.com/v0/b/porfolio-f7438.appspot.com/o/git.png?alt=media&token=01e1f56e-6ef7-460e-a81f-d1769a65fad0" alt="" className="skill" />
-                        <p>NodeJS</p>
+                        <p>Git</p>
                     </div>
                 </div>
 

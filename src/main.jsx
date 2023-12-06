@@ -14,13 +14,13 @@ import { Contact } from "./Contact/Contact";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-        <Menu/>
-        <Home/>
-        <About/>
-        <Services />
-        <Porfolio />
-        <Contact />
-        <Footer />
+    <Menu/>
+    <Home/>
+    <About/>
+    <Services />
+    <Porfolio />
+    <Contact />
+    <Footer />
 
   </React.StrictMode>,
 )

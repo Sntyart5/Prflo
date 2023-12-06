@@ -1,34 +1,55 @@
 .Contact{
     background-color: #fff;
-    padding: 7rem 9rem;
+    padding: 7rem 12rem 3rem ; 
 }
+.Contact h1{
+    padding-bottom: 2rem ; 
+}
+
 .contacts{
-    width: 100%;
-    height: 100%;
-    margin:  1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa en la fila */
+    align-items: center; 
+    margin: 0 -2.3%  ;
 }
 
 .cont{
-    width: 10rem;
-    height: 7rem;
-    text-align: center;
-    align-items: center;
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 1rem;
-}
-.cont p{
-    font-size: 18px;
-}
-.icon2{
-    width:3rem;
-    height:3rem;
-    margin-bottom: 0.5rem;
+    width: calc(29% ); /* 33.33% de ancho para mostrar 3 elementos en una fila, y 20px de margen entre los elementos */
+    padding: 3rem 0 2rem ;
+    justify-content: center;
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+    margin: 1em; /* Ajusta el margen entre los elementos según tus necesidades */
+    transition: transform 0.3s ease; /* Transición de 0.5 segundos para un cambio suave durante el efecto hover */
+
 }
 
+.cont:hover{
+    transform: scale(1.1); /* Escala la imagen al 110% cuando el mouse pasa sobre ella */
+    
+}
+.cont a{
+    text-decoration: none;
+    color: inherit; /* Heredar color del texto del contenedor padre */
+}
+.cont p{
+    margin-top: .5rem;
+    font-size: 18px;
+}
+
+
+
+.icon2{
+    width: 3rem;
+    height:3rem;
+}
+
+.email{
+    fill: #EA4335; 
+}
+
+.lkd{
+    fill: #0077B5; 
+}
 
 @media screen and (max-width: 480px) {
     .Contact{
